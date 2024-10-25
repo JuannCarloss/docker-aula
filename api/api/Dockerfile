@@ -8,3 +8,7 @@ RUN mvn clean install -Dmaven.test.skip=true
 EXPOSE 8080
 
 ENTRYPOINT ["java","-jar","target/api-0.0.1-SNAPSHOT.jar"]
+
+#comandos docker executados para buildar e rodar imagem:
+#docker build -t my-app .
+#docker run --name app-java -d -p 8080:8080 my-app
